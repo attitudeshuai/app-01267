@@ -1,0 +1,18 @@
+# 测试环境配置
+spring:
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/medicine_sales?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: ${MYSQL_USER:root}
+    password: ${MYSQL_PASSWORD:root123456}
+
+  redis:
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_PORT:6379}
+
+upload:
+  path: ${java.io.tmpdir}/medicine-test-uploads/
+
+logging:
+  level:
+    com.medicine.sales: INFO
+    com.medicine.sales.mapper: WARN

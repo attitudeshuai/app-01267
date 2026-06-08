@@ -1,0 +1,39 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+.kiro/
+.cursor/
+
+# Java
+backend/target/
+*.class
+*.jar
+*.war
+
+# Node
+node_modules/
+frontend-admin/node_modules/
+frontend-user/node_modules/
+frontend-admin/dist/
+frontend-user/dist/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Upload
+uploads/
+
+# Docker
+mysql_data/
+redis_data/
